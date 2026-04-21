@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script>
+document.addEventListener("click", function(e) {
+  let heart = document.createElement("div");
+  heart.innerHTML = "♡";
+  heart.style.position = "absolute";
+  heart.style.left = e.pageX + "px";
+  heart.style.top = e.pageY + "px";
+  heart.style.fontSize = "18px";
+  heart.style.color = "#ff8fcf";
+  heart.style.pointerEvents = "none";
+
+  document.body.appendChild(heart);
+
+  heart.animate([
+    { transform: "translateY(0)", opacity: 1 },
+    { transform: "translateY(-80px)", opacity: 0 }
+  ], {
+    duration: 800,
+    easing: "ease-out"
+  });
+
+  setTimeout(() => heart.remove(), 800);
+});
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Character Creation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/screen.css">
+</head>
+
+<body>
+
+<div class="main">
+
+<header class="site-header">
+
+  <div class="header-inner">
+    <h1>⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹</h1>
+
+    <h1 class="subtitle"> Character Creation ✧˖°</h1>
+
+    <nav class="nav">
+      ⋆⋅☆⋅⋆ ─ 
+      <a href="index.html">Home</a> |
+      <a href="character.html">Character Creation</a> |
+      <a href="art.html">Art</a> |
+      <a href="world.html">World</a> |
+      <a href="yume.html">Yumeshipping</a> |
+      <a href="example.html">Example</a>
+      ─ ⋆⋅☆⋅⋆
+    </nav>
+  </div>
+
+</header>
+
+<h2>  . ݁₊ ⊹ . ݁꒰ঌ· Getting started! ·໒꒱ ݁ . ⊹ ₊ ݁. •</h2>
+
+<div class="divider">⋆｡‧˚ʚ♡ɞ˚‧｡⋆</div>
+
+<p>Getting inspired to make a character can come from absolutely anything. There's thousands of OC-universes on the internet based around people's different interpretations of humanized food and countries, even sentient objects. I myself have made a character after thinking 'Oh, mint chocolate chip colours would be such a gorgeous colour palette on a mori-kei style girl.' And thus a character was born! Not every character has to be fully fleshed out with intricate backstories and relationships either. Whether it's a one-time thing to showcase a concept you wanted to bring to life, an outfit or you do want something complex to live out a story, all characters are amazing little expressions of creativity.</p>
+
+<div class="aside">
+    ˖° If you're thinking about making a self-insert character, it's so much easier too! It can literally be.. Just you with some fantasy elements! Or a character that shares traits with you.. Or anything! As long as you intend to identify with it, that's your self-insert.
+  </div>
+
+<p> Something that many people get hung up over is worrying if their original characters and creations are actually truly original and to that I say probably not! Everything has been done before but the way in which you do it makes it unique. You want to do a fantasy world? Do it! Though fantasy has been done hundreds of times before, nobody will have ever done it quite like you. There's also no need for things to be seperate from every other media, as impossible as that is anyway, inspiration brings about more passion. </p>
+
+<p> There's also the question of a 'Mary-Sue' and if it's acceptable to create one to insert it into an existing media or just to have for yourself and to that I say.. DO WHAT YOU WANT! Mary-Sue's are characters that are deemed as 'too overpowered' or given too many traits and perks such as all the other characters being in love with them or being a rare species.. Ect. Ect..! But truly none of it matters as if it brings you joy then that's all you need! Create that half-dragon, half-unicorn lost princess of the fae kingdom thought to have died to the great magic purge a thousand years ago but she actually survived and absorbed all the magic that everyone else lost..! Even ironically creating characters is fun. </p>
+
+
+<h2> WHERE do I get started? </h2>
+
+<p> For me personally, I like to start with a concept. I like taking an already existing trope - like the <html lang="jp">'chuunibiyou'</html lang="en"> type where the character believes that they've got some powers or special knowledge about a secret organisation while everyone thinks that they're just delusional - and thinking of how I can make it my own. With the <html lang="jp">chuunibiyou</html lang="en"> trope, most characters in animes and medias think they're battling a secret organisation with their powers so I thought it'd be make someone who thinks that they're distantly related to some great ninja and wants to bring back the art of kunoichi into the modern world. </p>
+
+
+<div class="section">
+
+<p>My process is:</p>
+<ol>
+<li>Find a concept or trope.</li>
+<li>Expand on it and what YOU think are the best parts of it.</li> 
+<li>Search up some names that mean somehing relevant to the character or just name them whatever you'd like. </li>
+</ol>
+</div>
+
+<img src="owlmen.jpeg" alt="a drawing of two owl inspired men"></a></img>
+
+<div class="tip-box">
+    These two were made with a great-horned-owl in mind and quite literally nothing else. I landed on Goro and Fuku for their names, both correlating to owls.
+  </div>
+
+<p> Whether in a Universe of their own or being inserting into a pre-existing media, note down their relevance in that world. Their past, connections with the characters - something I'll go more into depth in <a href="yume.html"> yumeshipping </a> - and maybe even their future! I like to give my characters timelines where a few of them are the 'good ending' where everyone lives a happy little life or it's just the best outcome and work my way down from there into worse and worse 'ending' scenarios just because it's enjoyable to see what the different choices could lead to.</p>
+
+<div class="divider">⋆｡‧˚ʚ♡ɞ˚‧｡⋆</div>
+
+<button id="topBtn">♡ TOP </button>
+
+<footer>
+
+<h1><b>ღ´͈ ᵕ `͈ )♡⃛(´͈ ᵕ `͈ ღ</h1></p>
+
+<h3>&copy 2026 Victoria Sullivan. All rights reserved</h3>
+
+</footer>
+
+</div>
+
+<button id="topBtn">TOP</button>
+
+</div>
+
+<script>
+const btn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+btn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+</body> 
+
+</html>

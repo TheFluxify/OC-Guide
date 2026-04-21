@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script>
+document.addEventListener("click", function(e) {
+  let heart = document.createElement("div");
+  heart.innerHTML = "♡";
+  heart.style.position = "absolute";
+  heart.style.left = e.pageX + "px";
+  heart.style.top = e.pageY + "px";
+  heart.style.fontSize = "18px";
+  heart.style.color = "#ff8fcf";
+  heart.style.pointerEvents = "none";
+
+  document.body.appendChild(heart);
+
+  heart.animate([
+    { transform: "translateY(0)", opacity: 1 },
+    { transform: "translateY(-80px)", opacity: 0 }
+  ], {
+    duration: 800,
+    easing: "ease-out"
+  });
+
+  setTimeout(() => heart.remove(), 800);
+});
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Art and Indulgence</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/screen.css">
+</head>
+
+<body>
+
+
+<div class="main">
+
+<header class="site-header">
+
+  <div class="header-inner">
+    <h1>⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹</h1>
+
+    <h1 class="subtitle">Art and Indulgence ✧˖°</h1>
+
+    <nav class="nav">
+      ⋆⋅☆⋅⋆ ─ 
+      <a href="index.html">Home</a> |
+      <a href="character.html">Character Creation</a> |
+      <a href="art.html">Art</a> |
+      <a href="world.html">World</a> |
+      <a href="yume.html">Yumeshipping</a> |
+      <a href="example.html">Example</a>
+      ─ ⋆⋅☆⋅⋆
+    </nav>
+  </div>
+
+</header>
+
+<h2>  . ݁₊ ⊹ . ݁꒰ঌ· What to do with characters once you've made them? ·໒꒱ ݁ . ⊹ ₊ ݁. •</h2>
+
+<div class="divider">⋆｡‧˚ʚ♡ɞ˚‧｡⋆</div>
+
+<p> Anything! Personally, I love developing them further and if that's up your alley, consider doing these: </p>
+
+<div class="section">
+
+
+<ul>
+<li>Considering what fashion style they like to wear! Maybe doodle some outfits until it feels right.</li>
+
+<li>Similar to fashion and style, if they were put in formal wear or a uniform, how would they wear it? It says a lot about a person and a character.</li>
+
+<li>How do they act when they're alone? When they're vulnerable? Art doesn't have to be just drawings, writing counts and those scenarios are incredibly useful when it comes to fleshing out a character.</li>
+
+<li>What's their body language like? It describes a character without ever having to write dialogue for them.</li>
+
+<li>What does their room look like? What do they have in their bag or inventory when they go out?</li>
+
+</ul> 
+
+</div>
+
+<p> Art for characters never has to be LITERAL actual art! Writing counts, making a playlist for them counts, it's all about just enjoying what you make for them. People make animation memes on TikTok, edits and entire mood boards. You don't even need to know how to draw either if you want to have a visual creation of your character! Recently, people have taken to multiple different ways to bring their OCs to life without drawing them.</p>
+
+<p> But if digital art or traditional art in the way of drawing is your thing, there's so much you can do! Pop-up pages in sketchbooks, make a journal scrapbook page with a little doodle of the character, portraits, the like.. When it comes to digital, you can expand into animation and tweening! Maybe even make a cute little loopable gif of your character, a small animation to a song they'd like, maybe follow a trend you see online that you thinkd suit them! The possibilities and oppurtunities are endless. If you're struggling for poses, for ideas or want to get started with drawing, Pinterest is always amazing for references! There's free to use bases that'll give you a push in the right direction or you can just use them. </p>
+
+<div class="post">
+
+  <img src="cupidgirl.jpeg" class="float-img" alt="drawing of a pink girl">
+
+  <p>
+    This is a character I made after thinking about modern day cupids! And then going into some long daydream about it being some organisation where they've gotta be sent down into Earth and disguised amongst humans.. She's a playful girl so I wanted to show that with her expression down to the cell-shading colouring style.
+  </p>
+  
+  <p> If you want a commission similar to this, or just more advice, contact me!</p>
+  
+  <div class="contact">
+
+  <h2>✧ Send your details!</h2>
+
+  <form>
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Your email">
+
+    <textarea placeholder="Your message"></textarea>
+
+    <button type="submit">Send ♡</button>
+  </form>
+
+</div>
+
+<div class="divider">⋆｡‧˚ʚ♡ɞ˚‧｡⋆</div>
+
+<button id="topBtn">TOP</button>
+
+<footer>
+
+<h1><b>ღ´͈ ᵕ `͈ )♡⃛(´͈ ᵕ `͈ ღ</h1></p>
+
+<h3>&copy 2026 Victoria Sullivan. All rights reserved</h3>
+
+</footer>
+
+</div>
+
+<button id="topBtn">TOP </button>
+
+
+</div>
+
+<script>
+const btn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+btn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+</body> 
+
+</html>

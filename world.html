@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<script>
+document.addEventListener("click", function(e) {
+  let heart = document.createElement("div");
+  heart.innerHTML = "♡";
+  heart.style.position = "absolute";
+  heart.style.left = e.pageX + "px";
+  heart.style.top = e.pageY + "px";
+  heart.style.fontSize = "18px";
+  heart.style.color = "#ff8fcf";
+  heart.style.pointerEvents = "none";
+
+  document.body.appendChild(heart);
+
+  heart.animate([
+    { transform: "translateY(0)", opacity: 1 },
+    { transform: "translateY(-80px)", opacity: 0 }
+  ], {
+    duration: 800,
+    easing: "ease-out"
+  });
+
+  setTimeout(() => heart.remove(), 800);
+});
+</script>
+
+<head>
+  <meta charset="UTF-8">
+  <title>World Creation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/screen.css">
+</head>
+
+<body>
+
+<div class="main">
+
+<header class="site-header">
+
+  <div class="header-inner">
+    <h1>⊹₊˚‧︵‿₊୨ᰔ୧₊‿︵‧˚₊⊹</h1>
+
+    <h1 class="subtitle"> World Creation ✧˖°</h1>
+
+    <nav class="nav">
+      ⋆⋅☆⋅⋆ ─ 
+      <a href="index.html">Home</a> |
+      <a href="character.html">Character Creation</a> |
+      <a href="art.html">Art</a> |
+      <a href="world.html">World</a> |
+      <a href="yume.html">Yumeshipping</a> |
+      <a href="example.html">Example</a>
+      ─ ⋆⋅☆⋅⋆
+    </nav>
+  </div>
+
+</header>
+
+<blockquote>
+  "Pursue your ideal. Fight against reality!"
+</blockquote>
+
+<section class="guide-section">
+  <h2>Some examples of worlds you could make</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Fantasy!</h3>
+      <p>Dungeons and Dragons inspired, full of mythical beasts and faraway kingdoms! This is incredibly popular and always has been in media from The Game of Thrones to House of Dragons.</p>
+    </div>
+
+    <div class="card">
+      <h3>Cyberpunk!</h3>
+      <p>A future where everything has gone full tech, including people! Games and media like CYBERPUNK 2077 and Cyberpunk: Edgerunners feature this.</p>
+    </div>
+
+    <div class="card">
+      <h3>Modern!</h3>
+      <p>Maybe an office! A school! An intricate city somewhere where everyone knows everyone or nobody! Most slice of life animes are set like this but there's also western medias like Two Broke Girls, The Office, Brooklyn 99.</p>
+    </div>
+	
+	<div class="card">
+      <h3>Outerspace!</h3>
+      <p>A new planet has been discovered and there's an expedition there to see if it's liveable OR from the perspective of those who might already inhabit it! Star Wars, Doctor Who and Star Trek all touch up on space.</p>
+	  </div>
+	  
+	  <div class="card">
+      <h3>Underwater!</h3>
+      <p>Very little is known about our ocean, you could create new species! The Meg, The Swarm, The Deep and The Abyss focus on the scary unknown..</p>
+    </div>
+	
+	<div class="card">
+      <h3>Alternative Modern!</h3>
+      <p>Similar to normal modern day life but maye everyone is born with powers! Or there's a select group of people with them forming organisations like what happens in The Boys and My Hero Academia. </p>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    Reminder: Don't ever feel like you HAVE to do anything or go by conventions set by similar medias. It's always completely your choice. Make a fantasy-inspired cyberpunk world with robot knights and mecha dragons! Do what you like above all else, this is just to give some ideas!
+  </div>
+</section>
+
+<div class="divider">⋆｡‧˚ʚ♡ɞ˚‧｡⋆</div>
+
+<button id="topBtn">TOP</button>
+
+<footer>
+
+<h1><b>ღ´͈ ᵕ `͈ )♡⃛(´͈ ᵕ `͈ ღ</h1></p>
+
+<h3>&copy 2026 Victoria Sullivan. All rights reserved</h3>
+
+</footer>
+
+</div>
+
+<button id="topBtn">♡ TOP </button>
+
+</div>
+
+<script>
+const btn = document.getElementById("topBtn");
+
+window.onscroll = function() {
+  if (document.documentElement.scrollTop > 200) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+btn.onclick = function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
+</script>
+
+</body> 
+
+</html>
